@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Card } from "../Card/Card";
 import "./Decks.css";
+import changeAudio from "../../assets/changeCardSound.mp3"
 
 export const Decks = ({
   deckOne,
@@ -16,6 +17,8 @@ export const Decks = ({
     deckTwo: "",
     deckThree: ""
   });
+  const cardChangeAudio = useRef(new Audio(changeAudio));
+  cardChangeAudio.current.volume = 0.1;
 
   const moveCard = (fromDeck, toDeck, setFromDeck, setToDeck, fromDeckName, toDeckName) => {
     if (fromDeck.length === 0) return;
@@ -34,6 +37,7 @@ export const Decks = ({
         [fromDeckName]: "",
       });
     }, 1000);
+    cardChangeAudio.current.play()
   };
 
   return (
