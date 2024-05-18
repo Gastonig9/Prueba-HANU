@@ -1,0 +1,15 @@
+.deck-contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.deck-contain .one, 
+.deck-contain .two, 
+.deck-contain .three {
+    width: 267px;
+    height: 376px;
+    background: linear-gradient(to bottom, #1e1e1e, #4d4d4d);
+    border-radius: 10px;
+}

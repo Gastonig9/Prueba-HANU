@@ -1,0 +1,55 @@
+.options-game {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.options-game .order-contain {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.options-game .order-contain p {
+  font-size: 17px;
+  color: #d1d1d1;
+}
+
+.options-game .order-contain h1 {
+  color: #eaeaea;
+  border: 2px solid blue;
+  padding: 5px 15px;
+  border: 2px solid #d1d1d1;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.options-game .order-contain h1:hover {
+  background-color: #eaeaea;
+  color: #8a8888;
+}
+
+.options-game .reset-contain {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ccdee7;
+  padding: 10px 15px;
+  border: 3px solid #5e99bc;
+  cursor: pointer;
+}
+
+.options-game .reset-contain button {
+  background-color: #ccdee7;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.options-game .reset-contain i {
+  font-size: 23px;
+}
