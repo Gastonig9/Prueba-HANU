@@ -1,6 +1,9 @@
-# React + Vite
+# Juego de Naipes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este juego consiste en tres barajas y las tipicas cartas de naipes. El objetivo es ubicar la carta solicitada en la parte superior de cada baraja. Si lo logras, ganaras el juego.
+
+# Comportamiento
+Las cartas comienzan en la primera baraja en un orden aleatorio. Las cartas siempre se mueven hacia la derecha. Cuando se hace click en la carta ubicada en la primera baraja, esta se mueve hacia la segunda, si se hace click en la segunda baraja se movera a la tercera y de la tercera nuevamente al principio.
 
 Currently, two official plugins are available:
 
